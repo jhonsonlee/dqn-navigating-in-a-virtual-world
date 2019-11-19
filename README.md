@@ -37,7 +37,7 @@ Given this information, the agent has to learn how to best select actions.  Four
 
 Follow the instructions below to explore the environment on your own machine! You will also learn how to use the Python API to control your agent.
 
-#####Step 1: Set Up The Depedencies
+####Step 1: Set Up The Depedencies
 To set up your python environment to run the code in this repository, follow the instructions below.
 1. Create (and activate) a new environment with Python 3.6.
 
@@ -72,7 +72,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 (For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
 
-#####Step 2: Clone the Repository
+####Step 2: Clone the Repository
 
 	```bash
 	git clone https://github.com/jhonsonlee/dqn-navigating-in-a-virtual-world.git
