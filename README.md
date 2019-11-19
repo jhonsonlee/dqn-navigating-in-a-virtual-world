@@ -2,13 +2,22 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
-# Project 1: Navigation
+# Design An RL Agent to Collect Fresh Bananas
 
 ### Introduction
 
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
+The goal of this project is to create an agent to play a game in a virtual world. An agent here can be seen as a player, but the player is the computer which use artificial intelligence. The virtual world are full of two types of bananas: the fresh one(yellow) and the rotten one(blue). The agent need to collect the yellow bananas as many as possible and avoid the blue one. 
+
+The virtual world can be seen in the following **.gif file**.
 
 ![Trained Agent][image1]
+
+In order to successfully create a smart agent, we use Deep Reinforcement Learning(DRL) algorithm which is one well-known method in Artificial Intelligent. DRL algorithm allow the agent, in our case the player, learn how to play the while interacting in the virtual world. In other words, the agent starts the game without any knowledge, learns slowly by interacting the game and finally masters the game after enough interaction in the virtual world.
+
+Moreover, we use the Deep Q-Networks(DQN) inspired by (the paper)[https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf] which described successful implementation of Reinforcement Learning algorithm to play in various Atari games.
+
+You are encouraged to learn the concept of Reinforcement Learning and (the DQN paper)[https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf] and use this repo to better understand the implementation of an DQN agent to play the banana game.
+
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
 
