@@ -4,7 +4,7 @@
 
 # Design An RL Agent to Collect Fresh Bananas
 
-### Introduction
+## Introduction
 
 The goal of this project is to create an agent to play a game in a virtual world. An agent here can be seen as a player, but the player is the computer which use artificial intelligence. The virtual world are full of two types of bananas: the fresh one(yellow) and the rotten one(blue). The agent need to collect the yellow bananas as many as possible and avoid the blue one. 
 
@@ -18,7 +18,7 @@ Moreover, we use the Deep Q-Networks(DQN) inspired by [the paper](https://storag
 
 You are encouraged to learn the concept of Reinforcement Learning and [the DQN paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) and use this repo to better understand the implementation of an DQN agent to play the banana game.
 
-### The Details on The Environment and The Agent
+## The Details on The Environment and The Agent
 #### The Environment
 In reinforcement learning, the virtual world where the agent(the player) play is usually called **the environment**. Thus, the word **environment** refers to the square world full of bananas in our case.
 
@@ -33,7 +33,7 @@ Given this information, the agent has to learn how to best select actions.  Four
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-### Getting Started
+## Getting Started
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
@@ -47,7 +47,7 @@ Given this information, the agent has to learn how to best select actions.  Four
 
 2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
 
-### Instructions
+## Instructions
 
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
 
