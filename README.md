@@ -18,16 +18,20 @@ Moreover, we use the Deep Q-Networks(DQN) inspired by [the paper](https://storag
 
 You are encouraged to learn the concept of Reinforcement Learning and [the DQN paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) and use this repo to better understand the implementation of an DQN agent to play the banana game.
 
+### The Details on The Environment and The Agent
+#### The Environment
+In reinforcement learning, the virtual world where the agent(the player) play is usually called **the environment**. Thus, the word **environment** refers to the square world full of bananas in our case.
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+The environment is a virtual world full of bananas explained in the introduction section. The environment is further processed to a simple representation of **state space**. The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction
 
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
+#### The Agent
+The agent is the player here. The agent will get a reward of +1 for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of our agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+
+Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
 - **`0`** - move forward.
 - **`1`** - move backward.
 - **`2`** - turn left.
 - **`3`** - turn right.
-
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
 ### Getting Started
 
