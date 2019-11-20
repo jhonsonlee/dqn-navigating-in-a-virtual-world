@@ -58,8 +58,8 @@ To set up your python environment to run the code in this repository, follow the
 	
 3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
 ```bash
-git clone https://github.com/udacity/deep-reinforcement-learning.git
-cd deep-reinforcement-learning/python
+git clone https://github.com/jhonsonlee/dqn-navigating-in-a-virtual-world.git
+cd dqn-navigating-in-a-virtual-world/python
 pip install .
 ```
 
@@ -72,14 +72,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 (For Windows users) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
 
-#### Step 2: Clone the Repository
-
-	```bash
-	git clone https://github.com/jhonsonlee/dqn-navigating-in-a-virtual-world.git
-	cd dqn-navigating-in-a-virtual-world
-	```
-
-#### Step 3: Download the Unity Environment
+#### Step 2: Download the Unity Environment
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
@@ -92,7 +85,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file.
 
-#### Step 4: Getting Familiar with Jupyter Notebook
+#### Step 3: Getting Familiar with Jupyter Notebook
 The code in this repository will be written mostly in `.ipynb` file. Thus, you need to get familiar with the **jupyter notebook** which is a great editor today. Please, take your time to know Jupyter Notebook in [this blogpost](https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46). 
 
 ## Instructions
