@@ -99,20 +99,20 @@ The code in this repository will be written mostly in `.ipynb` file. Thus, you n
 
 ### Navigating The Source Code
 There are three important files which contains the source code to run and train our agent:
-> `Navigation.ipynb` contains the instructions to explore the environent, train the agent to be smart and run the smart agent.
-> `/src/agent.py` contains the source code which describes how the agent works
-> `/src/model.py` contains the source code of deep learning model for the DQN value function
+- `Navigation.ipynb` contains the instructions to explore the environent, train the agent to be smart and run the smart agent.
+- `/src/agent.py` contains the source code which describes how the agent works
+- `/src/model.py` contains the source code of deep learning model for the DQN value function
 
 ### Explore the Environment
 In order to understand how to create a smart agent, we must recognize the environment first. Please, open `Navigation.ipynb` using Jupyter Notebook and follow these steps:
-> Step 1 : Start the Environment
-> Step 2 : Examine the State and Action Spaces
-> Step 3 : Take Random Actions in the Environment
+- Step 1 : Start the Environment
+- Step 2 : Examine the State and Action Spaces
+- Step 3 : Take Random Actions in the Environment
 
 ### Train the Agent
 As you can see in the **Explore the Environment** section, the agent is still taking random actions and generate zero points during the gameplay. In order to create a smart agent, we need to train the agent by following these two steps:
-> Step 4 : Contruct the Train Method
-> Step 5 : Train the Agent
+- Step 4 : Contruct the Train Method
+- Step 5 : Train the Agent
 
 ### Watch the Smart Agent Play
-After we train to agent how to better play the game, we can watch the agent play with better decision and better score. Howevever, we can not see the agent play in live gameplay in this notebook. But, we can see the agent collects yellow bananas and avoids blue bananas by inspecting the score movement. 
+After we train to agent how to better play the game, we can watch the agent play with better decision and better score. Howevever, we can not see the agent play in live gameplay in this notebook. But, we can see the agent collects yellow bananas and avoids blue bananas by inspecting the score movement. Please follow the **Step 6 : Watch the Agent Play**.
