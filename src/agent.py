@@ -20,7 +20,7 @@ LR = 5e-4               # learning rate
 UPDATE_EVERY = 4        # how often to update the network
 
 class Agent():
-    """Interacts with and learns from the environment."""
+    """ The agent object to interact with the environment. """
 
     def __init__(self, state_size, action_size, seed,
                  buffer_size = BUFFER_SIZE,
@@ -30,17 +30,34 @@ class Agent():
                  lr = LR,
                  update_every = 4):
         
+        ''' Initialize the agent 
+        
+        Params
+        ======
+            state_size (int) : dimension of state space
+            action_size (int): dimension of action space
+            seed (int)       : number of seed
+            buffer_size (int): maximum size of buffer
+            batch_size (int): size of each training batch
+            gamma (float): discount factor
+            tau (float) : for soft update of target parameters
+            lr (float) : the learning rate
+            update_every (int) : how often to update the network
+       
+        '''
+        
+        # Initialize important parameter
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(seed)
         self.update_every = update_every
 
-        # Q-Network
+        # initialize Q-Network
         self.qnetwork_local = QNetwork(state_size, action_size, seed).to(device)
         self.qnetwork_target = QNetwork(state_size, action_size, seed).to(device)
         self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=LR)
 
-        # Replay memory
+        # Initialize replay memory buffer
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, seed)
         # Initialize time step (for updating every UPDATE_EVERY steps)
         self.t_step = 0
